@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Bloomscape | Money Tree</title>
-  <!-- We need to add in an important meta tag here -->
-  <!-- Link the css here -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
   <!-- If you are using a Google font, add your links here OR as @import in your css  -->
 </head>
 <body>
@@ -12,11 +12,11 @@
   <!-- Do not change html markup in header. -->
   <header class="wrapper">
     <h1><img src="images/bloomscape-logo.svg" alt="Bloomscape logo"></h1>
-    <nav>
+    <nav role="navigation">
       <ul>
-        <li><a href="#">Plants</a></li>
-        <li><a href="#">Care tools</a></li>
-        <li><a href="#">Learn</a></li>
+        <li><a href="#plants">Plants</a></li>
+        <li><a href="#care-tools">Care tools</a></li>
+        <li><a href="#learn">Learn</a></li>
       </ul>
     </nav>
   </header>
@@ -24,19 +24,30 @@
 
 
   <!-- Add content for your product page using provided text in content.txt -->
-  <main class="wrapper">
+  <main class="wrapper" role="main">
+    <h1><img src="images/bloomscape-logo.svg" alt="bloomscape logo"></h1>
 
+    <section>
+      <h2>Money Tree</h2>
+    </section>
 
+    <section>
+      <h3>Details & Care</h3>
+    </section>
 
+    <section>
+      <h3>People also browsed</h3>
+    </section>
 
-
-
+    <section>
+      <h3>What people are saying</h3>
+    </section>
   </main>
 
 
 
   <!-- Do not change html markup in footer. -->
-  <footer class="wrapper">
+  <footer class="wrapper" role="contentinfo">
     <strong>© 2022 Bloomscape</strong>
   </footer>
 
