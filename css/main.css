@@ -12,7 +12,20 @@ html {
 
 body {
   margin: 0;
-  /* include your font family and default line-height */
+  line-height: 1.5;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+h2 h3 {
+  font-family: 'Crimson Pro', serif;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 img {
