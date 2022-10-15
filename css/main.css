@@ -108,6 +108,10 @@ dt, dd {
   display: flex;
 }
 
+dt span {
+  white-space: nowrap;
+}
+
 dt {
   font-weight: bold;
   margin-right: .3em;
