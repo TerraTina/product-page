@@ -51,11 +51,18 @@ section a {
 
 h3 {
   font-size: 1.5rem;
-  margin: 0 0 0.5em;
+}
+
+.browsed h3 {
+  margin: 0 0 .5em;
+}
+
+.details-care h3 {
+  margin: 0 0 -.5em;
 }
 
 p {
-  margin: 0;
+  margin: .5em 0;
   padding: 0;
 }
 
@@ -63,8 +70,8 @@ img {
   width: 100%;
 }
 
-section img {
-  margin: 1em 0;
+.money-tree img {
+  margin: 1em 0 0;
 }
 
 section {
@@ -91,6 +98,32 @@ h3 + figure img {
 
 blockquote {
   margin: 0 0 1em;
+}
+
+dt, dd {
+  margin: 0;
+}
+
+.same-line {
+  display: flex;
+}
+
+dt {
+  font-weight: bold;
+  margin-right: .3em;
+}
+
+ul {
+  margin: 0 0 0 1em;
+  padding: 0;
+}
+
+.browsed span{
+  font-weight: bold;
+}
+
+cite {
+  font-style: normal;
 }
 
 header {
