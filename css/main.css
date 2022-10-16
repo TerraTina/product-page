@@ -1,13 +1,10 @@
 html {
   box-sizing: border-box;
+  font-size: 100%;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
-}
-
-html {
-  font-size: 100%;
 }
 
 body {
@@ -30,6 +27,8 @@ h1 img {
 
 .wrapper {
   padding: 0 1em;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 h2, h3 {
@@ -73,7 +72,7 @@ h3 {
 }
 
 .whats-included h3 {
-  margin: .5em 0 .2em;
+  margin: .2em 0 .2em;
 }
 
 p {
@@ -82,12 +81,7 @@ p {
 }
 
 .money-tree img {
-  margin: 1em 0 0;
-}
-
-.wrapper {
-  max-width: 1400px;
-  margin: 0 auto;
+  margin: 1.3em 0 0;
 }
 
 figure {
@@ -174,14 +168,14 @@ footer {
 
 /* Add media query for tablet */
 @media only screen and (min-width: 40em){
-  .two-column {
+  .grid-area {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto 1fr;
   grid-template-areas:
     "img title"
     "img button"
-    "img description";
+    "img details";
   }
 
   .product-img {
@@ -189,9 +183,14 @@ footer {
     padding-right: 1em;
   }
 
-  .product-title {
+  .section-title {
     grid-area: title;
     padding-bottom: .5em;
+    margin: 0;
+  }
+
+  .whats-included h3 {
+    margin: 0;
   }
 
   .product-button {
@@ -199,13 +198,9 @@ footer {
     padding-bottom: .5em;
   }
 
-  .product-description {
-    grid-area: description;
+  .description .section-details {
+    grid-area: details;
+    margin-top: -.5em;
   }
-
-  h3 {
-    margin-top: 0;
-  }
-
 
 /* Add media query for desktop */
