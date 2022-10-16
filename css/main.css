@@ -16,8 +16,16 @@ body {
   font-family: 'Quattrocento Sans', sans-serif;
 }
 
+section {
+  margin: 4em 0;
+}
+
 img {
   width: 100%;
+}
+
+h1 img {
+  max-width: 20em;
 }
 
 .wrapper {
@@ -31,12 +39,20 @@ h2, h3 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
+  margin-right: .5em;
 }
 
-.money-tree div p {
+.money-tree .same-line {
+  align-items: baseline;
+}
+
+.money-tree .same-line p {
   font-size: 1.5rem;
-  /* margin-bottom: 2em; */
+}
+
+.money-tree p {
+  order: 50;
 }
 
 section a {
@@ -45,12 +61,6 @@ section a {
   font-size: 1.5rem;
   padding: .5em;
   background-color: #224229;
-}
-
-.flex {
-  display: flex;
-  align-items: baseline;
-  gap: 3%;
 }
 
 h3 {
@@ -73,10 +83,6 @@ p {
 
 .money-tree img {
   margin: 1em 0 0;
-}
-
-section {
-  margin: 4em 0;
 }
 
 .wrapper {
@@ -107,6 +113,11 @@ dt, dd {
 
 .same-line {
   display: flex;
+  flex-direction: row;
+}
+
+.money-tree .same-line {
+  flex: 1;
 }
 
 dd {
@@ -129,11 +140,6 @@ ul {
 
 cite {
   font-style: normal;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
 }
 
 header {
@@ -167,8 +173,39 @@ footer {
 /* Default styling for all screens ends here */
 
 /* Add media query for tablet */
+@media only screen and (min-width: 40em){
+  .two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+    "img title"
+    "img button"
+    "img description";
+  }
 
+  .product-img {
+    grid-area: img;
+    padding-right: 1em;
+  }
 
+  .product-title {
+    grid-area: title;
+    padding-bottom: .5em;
+  }
+
+  .product-button {
+    grid-area: button;
+    padding-bottom: .5em;
+  }
+
+  .product-description {
+    grid-area: description;
+  }
+
+  h3 {
+    margin-top: 0;
+  }
 
 
 /* Add media query for desktop */
