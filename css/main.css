@@ -16,6 +16,10 @@ body {
   font-family: 'Quattrocento Sans', sans-serif;
 }
 
+img {
+  width: 100%;
+}
+
 .wrapper {
   padding: 0 1em;
 }
@@ -51,23 +55,20 @@ section a {
 
 h3 {
   font-size: 1.5rem;
+  margin: .5em 0 -.4em;
 }
 
 .browsed h3 {
-  margin: 0 0 .5em;
+  margin: 0 0 .2em;
 }
 
-.details-care h3 {
-  margin: 0 0 -.5em;
+.whats-included h3 {
+  margin: .5em 0 .2em;
 }
 
 p {
   margin: .5em 0;
   padding: 0;
-}
-
-img {
-  width: 100%;
 }
 
 .money-tree img {
@@ -122,12 +123,17 @@ ul {
   padding: 0;
 }
 
-.browsed span{
+.browsed span {
   font-weight: bold;
 }
 
 cite {
   font-style: normal;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -157,7 +163,6 @@ header nav ul li a:focus {
 footer {
   text-align: center;
 }
-
 
 /* Default styling for all screens ends here */
 
