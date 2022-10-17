@@ -42,12 +42,9 @@ h2 {
   margin-right: .5em;
 }
 
-.same-line {
+.money-tree .same-line {
   display: flex;
   flex-direction: row;
-}
-
-.money-tree .same-line {
   align-items: baseline;
 }
 
@@ -109,21 +106,18 @@ figure {
   margin: 0;
 }
 
-blockquote {
-  margin: 0 0 1.5em;
-}
-
 dt, dd {
   margin: 0;
-}
-
-dd {
-  flex: 1;
 }
 
 dt {
   font-weight: bold;
   margin-right: .3em;
+}
+
+dd {
+  flex: 1;
+  margin-bottom: .7em;
 }
 
 ul {
@@ -133,6 +127,10 @@ ul {
 
 .browsed span {
   font-weight: bold;
+}
+
+blockquote {
+  margin: 0 0 1.5em;
 }
 
 cite {
@@ -170,7 +168,7 @@ footer {
 /* Default styling for all screens ends here */
 
 /* Add media query for tablet */
-@media only screen and (min-width: 40em){
+@media only screen and (min-width: 48em){
   .grid-area {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -236,12 +234,20 @@ footer {
 
   .grid-area {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: 33% 33%;
+  grid-template-rows: auto 1fr;
   grid-template-areas:
-    "img title ."
-    "img details .";
+    "img title"
+    "img details";
   }
+/* Dot-notation does not create empty columns.
+    .grid-area {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "img title ."
+      "img details .";
+  } */
+
 
   .money-tree {
     display: grid;
@@ -256,5 +262,10 @@ footer {
   .grid-template{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+  }
+
+  .same-line {
+    display: flex;
+    flex-direction: row;
   }
 }
